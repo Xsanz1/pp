@@ -1,0 +1,113 @@
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+  background: #f9f9f9;
+  border-bottom: 1px solid #ddd;
+}
+
+.topbar h2 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #2E1878;
+}
+
+.btn-new {
+  background: #2a187f;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 6px 10px; /* 🔹 dikurangi dari 14px jadi 10px */
+  font-size: 13px;   /* 🔹 sedikit lebih kecil */
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.btn-new:hover {
+  background: #1f1360;
+}
+
+
+.topbar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.topbar h2 {
+  margin-right: auto;
+  font-size: 18px;
+  color: #1a1a40;
+}
+
+.search-input {
+  padding: 6px 12px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 14px;
+  min-width: 120px;
+}
+
+.btn-new {
+  background: #2a187f;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 6px 10px;
+  cursor: pointer;
+}
+
+.btn-new:hover {
+  background: #1f1360;
+}
+.btn-new {
+background: #2a187f;
+color: white;
+border: none;
+border-radius: 20px;
+padding: 6px 10px;   /* Mengurangi ruang di dalam tombol */
+font-size: 13px;     /* Mengurangi ukuran teks tombol */
+cursor: pointer;
+transition: 0.2s;
+}
+
+.btn-new:hover {
+ background: #1f1360;
+}
+.topbar-buttons {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.btn-export {
+  background-color: #2196f3;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn-export:hover {
+  background-color: #1976d2;
+}
+
+.btn-import {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn-import:hover {
+  background-color: #388e3c;
+}

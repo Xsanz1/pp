@@ -1,0 +1,87 @@
+.ahs-container {
+  padding: 20px;
+}
+
+.ahs-table {
+  margin-bottom: 30px;
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.ahs-title {
+  background-color: #cde7ff;
+  padding: 10px;
+  border-radius: 8px;
+  font-weight: bold;
+  color: #004b8d;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+table th, table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+table th {
+  background-color: #f2f2f2;
+}
+
+.ahs-total {
+  margin-top: 10px;
+  font-weight: bold;
+  color: red;
+  text-align: right;
+}
+.ahs-container {
+  display: flex;
+  flex-direction: column; /* 👉 tampil ke bawah */
+  gap: 20px;              /* jarak antar tabel */
+  padding: 20px;
+}
+
+.ahs-table {
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.ahs-title {
+  background-color: #cde7ff;
+  padding: 10px;
+  border-radius: 8px;
+  font-weight: bold;
+  color: #004b8d;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+table th,
+table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+table th {
+  background-color: #f2f2f2;
+}
+
+.ahs-total {
+  margin-top: 10px;
+  font-weight: bold;
+  color: red;
+  text-align: right;
+}

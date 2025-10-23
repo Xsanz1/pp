@@ -1,0 +1,484 @@
+.ahs-container {
+  display: flex;
+  height: 100vh;
+}
+
+.ahs-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: white; /* area konten tetap putih */
+}
+
+.ahs-content {
+  padding: 20px;
+  background-color: white; /* konten putih */
+}
+
+/* Tambahan: styling untuk input/filter */
+.ahs-content input[type="text"],
+.ahs-content select,
+.ahs-content .filter-btn {
+  padding: 8px 14px;
+  border-radius: 20px;
+  border: none;
+  background: #aaa;   /* abu-abu */
+  color: white;       /* teks putih biar kontras */
+  outline: none;
+  cursor: pointer;
+  margin-right: 10px; /* kasih jarak antar kotak */
+}
+
+/* Table */
+.ahs-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  background-color: white; /* table tetap putih */
+}
+
+.ahs-table th,
+.ahs-table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.ahs-table th {
+  font-weight: bold;
+  color: #2c1a63; /* ungu sama seperti di Vendor */
+}
+
+/* Tombol aksi */
+.btn-edit {
+  background-color: #00bcd4;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  margin-right: 5px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.btn-delete {
+  background-color: #f44336;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+/* Layout utama */
+.ahs-container {
+  display: flex;
+  min-height: 100vh;
+  background-color: #f5f5f5;
+}
+
+.ahs-main {
+  flex: 1;
+  padding: 20px;
+}
+
+/* Topbar otomatis pakai styling dari komponen Topbar */
+
+/* Konten tabel */
+.ahs-content {
+  margin-top: 20px;
+  overflow-x: auto;
+}
+
+.ahs-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.ahs-table th,
+.ahs-table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.ahs-table th {
+  background-color: #2e1878;
+  color: white;
+}
+
+/* Tombol aksi */
+.action-buttons button {
+  padding: 5px 8px;
+  margin-right: 5px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+/* Warna tombol sesuai permintaan */
+button.view {
+  background-color: yellow;
+  color: black;
+}
+
+button.edit {
+  background-color: blue;
+  color: white;
+}
+
+button.delete {
+  background-color: red;
+  color: white;
+}
+
+/* Modal overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Modal box */
+.modal {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 400px;
+  max-width: 90%;
+  position: relative;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+/* Close icon */
+.close-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+/* Form di modal */
+.ahs-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.ahs-form label {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.ahs-form input {
+  padding: 6px 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+/* Tombol submit */
+.submit-btn {
+  margin-top: 15px;
+  padding: 8px 12px;
+  background-color: #2e1878;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.submit-btn:hover {
+  background-color: #1b0f4a;
+}
+
+/* Modal view detail */
+.close-btn {
+  margin-top: 15px;
+  padding: 8px 12px;
+  background-color: #2e1878;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  background-color: #1b0f4a;
+}
+/* ====== Layout AHS ====== */
+.ahs-container {
+  display: flex;
+  min-height: 100vh;
+  background: #f5f6fa;
+  font-family: Arial, sans-serif;
+}
+
+.ahs-main {
+  flex: 1;
+  padding: 20px;
+}
+
+/* ====== Table ====== */
+.ahs-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.ahs-table th,
+.ahs-table td {
+  padding: 10px 14px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.ahs-table th {
+  background-color: #2E1878;
+  color: white;
+  font-weight: bold;
+}
+
+.ahs-table tfoot td {
+  font-weight: bold;
+  background: #eee;
+}
+
+/* ====== Action Buttons ====== */
+.action-buttons {
+  display: flex;
+  gap: 6px;
+}
+
+.action-buttons button {
+  border: none;
+  padding: 4px 8px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.action-buttons .edit {
+  background: #ffc107;
+  color: #000;
+}
+
+.action-buttons .delete {
+  background: #dc3545;
+  color: #fff;
+}
+
+.action-buttons .view {
+  background: #007bff;
+  color: #fff;
+}
+
+/* ====== Modal ====== */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 400px;
+  max-width: 95%;
+  position: relative;
+}
+
+.close-icon {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  cursor: pointer;
+}
+
+.ahs-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.ahs-form input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.submit-btn {
+  padding: 10px;
+  background: #2E1878;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+/* ====== Tabel AHS ====== */
+.ahs-content {
+  margin-top: 20px;
+}
+
+.ahs-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.ahs-table th,
+.ahs-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+.ahs-table th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+/* ====== Tombol Aksi ====== */
+.action-buttons {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+}
+
+.action-buttons button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button.view {
+  color: #2E1878;
+}
+button.edit {
+  color: #ffa500;
+}
+button.delete {
+  color: red;
+}
+
+/* ====== Modal ====== */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 400px;
+  max-width: 90%;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+.close-icon {
+  float: right;
+  cursor: pointer;
+}
+/* ====== Gaya Tabel AHS ====== */
+.ahs-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #f9fbff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* Header tabel */
+.ahs-table thead {
+  background-color: #005b96; /* biru gelap */
+  color: white;
+  text-align: left;
+}
+
+.ahs-table th {
+  padding: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Isi tabel */
+.ahs-table td {
+  padding: 10px;
+  color: #333;
+  background-color: #ffffff;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Warna baris bergantian */
+.ahs-table tbody tr:nth-child(even) td {
+  background-color: #f1f6ff;
+}
+
+/* Saat kursor diarahkan ke baris */
+.ahs-table tbody tr:hover td {
+  background-color: #e1ecff;
+  color: #000;
+}
+
+/* Tombol aksi */
+.action-buttons button {
+  border: none;
+  padding: 6px 8px;
+  margin: 0 3px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.action-buttons .view {
+  background-color: #4da6ff;
+  color: white;
+}
+
+.action-buttons .edit {
+  background-color: #ffa500;
+  color: white;
+}
+
+.action-buttons .delete {
+  background-color: #e63946;
+  color: white;
+}
+
+.action-buttons button:hover {
+  opacity: 0.85;
+}

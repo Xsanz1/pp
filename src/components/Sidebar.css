@@ -1,0 +1,113 @@
+/* Layout utama */
+.layout {
+  display: flex;
+  min-height: 100vh;
+  background-color: white; /* warna putih untuk area konten */
+}
+
+/* Sidebar di kiri */
+.sidebar {
+  width: 230px;
+  background-color: #2E1878; /* ungu sidebar */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* agar isi sidebar sejajar di tengah */
+  padding: 20px 10px;
+}
+
+/* Logo */
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 0; /* jarak atas dan bawah logo */
+  margin-bottom: 40px; /* jarak dari menu di bawah */
+}
+
+.logo img {
+  width: 120px; /* ukuran proporsional terhadap sidebar */
+  height: auto;
+  display: block;
+  object-fit: contain; /* menjaga proporsi logo */
+  border-radius: 8px; /* opsional: sudut sedikit melengkung */
+}
+
+.logo span {
+  display: block;
+  margin-top: 10px;
+  font-weight: 600;
+  font-size: 14px;
+  color: #ffffff;
+  text-align: center;
+}
+
+/* Menu */
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+  padding: 8px 0;
+  border-radius: 6px;
+  transition: background-color 0.3s;
+}
+
+.menu a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Logout */
+.logout {
+  margin-top: auto;
+  margin-bottom: 50px; /* posisi logout di bagian bawah sidebar */
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  text-align: center;
+}
+
+/* Area konten */
+.content {
+  flex: 1;
+  padding: 30px;
+  background-color: #f8f9ff; /* sedikit abu lembut agar beda dengan sidebar */
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 20px;
+}
+
+ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  display: block;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+ul li a.active {
+  background-color: rgba(255, 255, 255, 0.25);
+  font-weight: 600;
+}

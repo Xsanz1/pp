@@ -36,3 +36,28 @@
     transform: rotate(360deg);
   }
 }
+/* Layout utama */
+.app-layout {
+  display: flex;
+  min-height: 100vh;
+  background-color: #ffffff; /* full putih */
+  font-family: Arial, sans-serif;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 220px;
+  background-color: #2E1878; /* ungu */
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Main Content */
+.main-content {
+  flex: 1;
+  padding: 20px;
+  background-color: #ffffff;
+  overflow-y: auto;
+}

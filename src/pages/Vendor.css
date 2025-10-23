@@ -1,0 +1,370 @@
+.vendor-container {
+  display: flex;
+  height: 100vh;
+}
+
+.vendor-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+}
+
+.vendor-content {
+  padding: 20px;
+}
+
+.vendor-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+/* Kotak search abu-abu */
+.vendor-search {
+  padding: 8px 14px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  width: 220px;
+  background: #aaa;   /* abu-abu */
+  color: white;       /* teks putih */
+}
+
+.vendor-search::placeholder {
+  color: white;       /* placeholder putih */
+}
+
+/* Kotak filter abu-abu */
+.vendor-filter {
+  padding: 8px 14px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  background: #aaa;   /* abu-abu */
+  font-size: 14px;
+  margin-right: 10px;
+  color: white;       /* teks putih */
+  font-weight: bold;
+}
+
+.vendor-filter::placeholder {
+  color: white;       /* placeholder putih */
+}
+
+.btn-new {
+  background: #2f1a66;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 0px 2px 6px rgba(0,0,0,0.2);
+}
+
+.vendor-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.vendor-table th {
+  text-align: left;
+  padding: 10px;
+  font-size: 14px;
+  color: #2f1a66;
+  border-bottom: 1px solid #ddd;
+}
+
+.vendor-table td {
+  padding: 10px;
+  font-size: 14px;
+  border-bottom: 1px solid #eee;
+}
+
+.btn-edit {
+  background: #00bcd4;
+  color: white;
+  border: none;
+  padding: 5px 8px;
+  border-radius: 4px;
+  margin-right: 4px;
+  cursor: pointer;
+}
+
+.btn-delete {
+  background: #f44336;
+  color: white;
+  border: none;
+  padding: 5px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+/* Layout utama */
+.vendor-container {
+  display: flex;
+  min-height: 100vh;
+  background-color: #f5f5f5;
+}
+
+.vendor-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.vendor-content {
+  padding: 20px;
+}
+
+/* Tabel */
+.vendor-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.vendor-table th,
+.vendor-table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.vendor-table th {
+  background-color: #2E1878;
+  color: white;
+}
+
+.vendor-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Tombol action */
+.action-buttons {
+  display: flex;
+  gap: 5px;
+}
+
+.action-btn {
+  border: none;
+  padding: 6px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.action-btn.view {
+  background-color: #3498db;
+  color: white;
+}
+
+.action-btn.delete {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.action-btn.edit {
+  background-color: #f39c12;
+  color: white;
+}
+
+/* Modal overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+/* Modal */
+.modal {
+  background-color: white;
+  padding: 20px;
+  width: 400px;
+  max-width: 90%;
+  border-radius: 8px;
+  position: relative;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+/* Close icon */
+.close-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+/* Form dalam modal */
+.vendor-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.vendor-form label {
+  font-weight: bold;
+}
+
+.vendor-form input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+/* Tombol submit */
+.submit-btn {
+  background-color: #2E1878;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.submit-btn:hover {
+  background-color: #4310c0;
+}
+/* Container tabel dengan scroll horizontal */
+.vendor-content {
+  padding: 20px;
+  overflow-x: auto; /* scroll horizontal */
+}
+
+/* Tabel tetap sama */
+.vendor-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 800px; /* supaya tabel tidak mengecil terlalu drastis */
+  background-color: white;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+/* Sisanya tetap sama */
+.vendor-table th,
+.vendor-table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.vendor-table th {
+  background-color: #2E1878;
+  color: white;
+}
+
+.vendor-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Tombol action */
+.action-buttons {
+  display: flex;
+  gap: 5px;
+}
+
+.action-btn {
+  border: none;
+  padding: 6px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.action-btn.view {
+  background-color: #3498db;
+  color: white;
+}
+
+.action-btn.delete {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.action-btn.edit {
+  background-color: #f39c12;
+  color: white;
+}
+
+/* Modal overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+/* Modal */
+.modal {
+  background-color: white;
+  padding: 20px;
+  width: 400px;
+  max-width: 90%;
+  border-radius: 8px;
+  position: relative;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+/* Close icon */
+.close-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+/* Form dalam modal */
+.vendor-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.vendor-form label {
+  font-weight: bold;
+}
+
+.vendor-form input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+/* Tombol submit */
+.submit-btn {
+  background-color: #2E1878;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.submit-btn:hover {
+  background-color: #4310c0;
+}

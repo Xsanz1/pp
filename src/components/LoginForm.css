@@ -1,0 +1,100 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: #2e1b72;
+}
+
+.login-container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 10%;
+}
+
+.login-card {
+  background: #fff;
+  padding: 40px;
+  border-radius: 30px;
+  width: 350px;
+  box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
+}
+
+.login-card h2 {
+  margin: 0 0 10px 0;
+  color: #2e1b72;
+  font-weight: bold;
+}
+
+.login-card p {
+  margin: 0 0 20px 0;
+  font-size: 14px;
+  color: gray;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  font-size: 14px;
+  font-weight: bold;
+  color: #2e1b72;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.input-group input {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #2e1b72;
+  padding: 8px;
+  font-size: 14px;
+  outline: none;
+}
+
+.password-wrapper {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #2e1b72;
+}
+
+.password-wrapper input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 8px;
+}
+
+.eye-icon {
+  cursor: pointer;
+  color: gray;
+  margin-right: 5px;
+}
+
+.forgot {
+  text-align: right;
+  margin-bottom: 20px;
+}
+
+.forgot a {
+  font-size: 13px;
+  color: #2e1b72;
+  text-decoration: none;
+}
+
+.btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  background: #7d6bf5;
+  color: white;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 16px;
+  box-shadow: 0px 4px 6px rgba(0,0,0,0.2);
+}
+
+.btn:hover {
+  background: #6a56e2;
+}
